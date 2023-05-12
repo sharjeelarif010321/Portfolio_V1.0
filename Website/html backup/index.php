@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title><img src="images/bg.jpg">Welcome to my Website</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://www.google.com/recaptcha/api.js?render=6LdobO8hAAAAAE8q-2K6oUpI7vN9lfeCbgljF-yc"></script> 
+	</head>
+
+	<?php
+		if(isset($_POST['submit'])) {
+			$url = 'https://www.google.com/recaptcha/api/siteverify';
+			$secret = '6LdobO8hAAAAAE8q-2K6oUpI7vN9lfeCbgljF-yc';
+			$response = $_POST['token_generate'];
+			$remoteip = $_SERVER['REMOTE_ADDR'];
+
+			$request = file_get_contents($url. = '?secret=' .$secret '?response=' .$response);
+			$result = json_decode($request)
+		}
+	?>
+	<body class="is-preload" oncontextmenu = false>
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+				<div id="backgroundimage" class="fade-in">
+				</div>
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Sharjeel Arif<br />
+						</h1>
+						<h3>About Me</h3>
+						<p id="about">Electronic Systems Engineering | C/C++ | Swift | Java | ARM Assembly | STM32 | Photoshop | iOS Development | XCode | HTML5 | CSS | JavaScript | Web Design | IDEs</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Welcome</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="projects.html">Projects</a></li>
+							<!-- <li><a href="downloads.html">Downloads</a></li> -->
+						</ul>
+						<ul class="icons">
+							<li><a href="https://twitter.com/SharjeelArif1" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.instagram.com/sharjeelarif010321/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://www.linkedin.com/in/sharjeelarif/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<h2>Who am I?<br/></h2>
+									<p>I'm a very motivated and determined individual with a demonstrated history of projects
+										and accomplishments in the electronics sector. Skilled in various programming languages (preferance for C++),
+										Solid Edge, Graphic Design, and Video Editing. I'm currently enrolled in a Bachelors of Applied Science
+										in Engineering with a major in Electronic Systems Engineering at the University of Regina.</p>
+
+									<p>There's a lot about technology that intrigues me. Something as small as making text appear on a screen
+										is enough to get me interested in it. I like to figure things out via example; I'm a very hands on learner.
+										Ever since I was little, I would tinker with things. Take them apart and build them back from the ground up.
+
+									<p>I also very much admire nature. Finding comfort in the ordered and chaotic aspects of the world around us.
+										I believe my passion for engineering sparks from my fondness of this constant chaotic, yet ordered chain of events that occur everyday.
+										Whether that's animals eating other animals to fulfil a foodchain. Or ecosystems, where plants, animals, and other organisms work together
+										to form a "bubble of life". Even something on as large of a scale as the water cycle, even that has chaotic order to it. My passion for engineering
+										stems from this idea of order within the world; I want to do my best to perserve it. With current events, such as extinction of wildlife, causing
+										foodchains to fall out of order. Or climate change, causing ecosystems to be eradicated. As an engineer, I want to do my best to perserve all of it.
+										At the end of the day, I'm just a very curious person.
+								</header>
+								<ul class="actions special">
+									<li><a href="#" class="button large">Back to top</a></li>
+								</ul>
+							</article>
+
+						<!-- Posts -->
+<!--							<section class="posts">
+								<article>
+									<header>
+										<span class="date">April 24, 2017</span>
+										<h2><a href="#">Sed magna<br />
+										ipsum faucibus</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 22, 2017</span>
+										<h2><a href="#">Primis eget<br />
+										imperdiet lorem</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 18, 2017</span>
+										<h2><a href="#">Ante mattis<br />
+										interdum dolor</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 14, 2017</span>
+										<h2><a href="#">Tempus sed<br />
+										nulla imperdiet</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 11, 2017</span>
+										<h2><a href="#">Odio magna<br />
+										sed consectetur</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">April 7, 2017</span>
+										<h2><a href="#">Augue lorem<br />
+										primis vestibulum</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+							</section>
+-->
+						<!-- Footer -->
+							<footer>
+
+							</footer>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form method="post" action="https://script.google.com/macros/s/AKfycbxQcxx3vpofJqiH1fqAlITrRgKL91xZiIFSIpVh/exec">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<input type = "hidden" name = "token_generate" id = "token_generate">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+							<script>
+							function goBack() {
+  							window.history.back();
+							}
+							</script>
+						</section>
+						<section class="split contact">
+
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://twitter.com/SharjeelArif1" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.instagram.com/sharjeelarif010321/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://www.linkedin.com/in/sharjeelarif/" class="icon brands alt fa-linkedin"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Sharjeel Arif 2021</li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+<script>
+	
+	  grecaptcha.ready(function() {
+		grecaptcha.execute('6LdobO8hAAAAAE8q-2K6oUpI7vN9lfeCbgljF-yc', {action: 'submit'}).then(function(token) {
+			// Add your logic to submit to your backend server here.
+			var response = document.getElementById('token_generate');
+			response.value = token;
+		});
+	  });
+</script>
